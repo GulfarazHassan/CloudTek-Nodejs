@@ -3,6 +3,7 @@ import connectDB from './config/db';
 
 connectDB();
 
-app.listen(8080, () => {
-  console.log('app is running on port 8080');
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log('app is running on port ', PORT);
 });
