@@ -23,7 +23,7 @@ exports.createItemDto = void 0;
 const yup = __importStar(require("yup"));
 exports.createItemDto = yup.object().shape({
     title: yup.string().required(),
-    photo: yup.string().required(),
+    photo: yup.string(),
     description: yup.string().required(),
     shortDescription: yup.string().required(),
 });
